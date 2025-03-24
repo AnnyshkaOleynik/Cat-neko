@@ -1,0 +1,53 @@
+@import "./theme/typography.css";
+@import "./theme/colors.css";
+@import "./theme/navigation.css";
+@import "./theme/components.css";
+@import "./theme/about-us.css";
+@import "./theme/contacts.css";
+@import "./theme/about-neko.css";
+@import "./theme/our-rooms.css";
+@import "./theme/purr-care.css";
+@import "./theme/cat-pictures.css";
+@import "./theme/pricing.css";
+@import "./theme/feedback.css";
+@import "./theme/book-now.css";
+@import "./theme/footer.css";
+/* @import "./theme/normalaze.css"; */
+
+
+
+body {
+    margin: 0px auto;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--night-color);
+}
+
+footer {
+    padding: 0px;
+}
+
+.dark-back {
+    background-color: var(--dark-back-color);
+    border-radius: 0px 0px 60px 60px;
+}
+
+@media (max-width: 1280px) {
+    .padding-general, .dark-back {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 50px 25px 0 25px;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .padding-general, .dark-back {
+        box-sizing: border-box;
+        margin-inline: auto;
+        max-width: 1440px;
+        padding: 40px 35px 0 64px;
+    }
+}
