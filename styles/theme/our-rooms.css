@@ -1,0 +1,127 @@
+.our-rooms {
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 1100px;
+
+    .our-rooms-subtitle {
+        text-align: center;   
+    }
+    .our-rooms-title {
+        text-align: center;
+        color: var(--white-color);
+    }
+    .our-rooms-text {
+        color: var(--white-color);
+        display: grid;        
+        column-gap: 20px;
+        grid-template-columns: 44px auto;
+        grid-template-rows: auto 2% auto 2% auto;         
+
+        .our-rooms-text-title {
+            padding-bottom: 25px;
+        }
+
+        .our-rooms-text-center {
+            align-self: center;            
+        }
+
+        .our-rooms-text-line {
+            width: 100%;
+            border-top: 2px solid #808080 ;
+            grid-column: 1/-1;
+            opacity: 12%;
+        }
+    }
+    
+}
+
+
+@media (max-width: 1024px) {
+    .our-rooms {    
+        align-items: center;
+        row-gap: 40px;
+        margin-bottom: 80px;
+        margin-inline: auto;
+        width: clamp(400px, 80vw, 900px);
+
+        .our-rooms-subtitle {
+            max-width: 300px;       
+        }
+
+        .our-rooms-text {
+            width: 100%; 
+            height: 520px; 
+
+            h4 {
+                padding-top: 0px;
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+    
+        }
+    }
+    
+    .our-rooms-image {
+        width: clamp(376px, 58vw, 600px );
+    }
+}
+
+@media (min-width: 1024px) {
+    .our-rooms {
+        display: grid;
+        grid-template-columns: min-content auto;    
+        justify-content: space-between;
+        grid-template-areas: 
+        "image subtitle"
+        "image title"
+        "image text"
+        "image text"
+        "image text";    
+        column-gap: 60px;
+        margin-bottom: 65px;
+        height: 571px;
+    
+    
+        .our-rooms-subtitle {
+            grid-area: subtitle;  
+            justify-self: center;          
+            margin-top: 20px;
+        }
+        .our-rooms-title {
+            grid-area: title;
+            margin-top: 30px;  
+        }
+        .our-rooms-text {
+            grid-area: text;
+            margin-top: 40px;
+            grid-template-rows: auto 2px 95px 2px 95px; 
+    
+            .our-rooms-text-title {
+                padding-top:10px ;
+            }
+    
+            .our-rooms-text-line {
+                width: 100%;
+            }
+        }
+        .our-rooms-image {
+            grid-area: image;
+            align-self: center;
+            width:41vw;
+            max-width: 576px;
+            height: auto;
+        }
+    }
+    
+}
+
+@media (max-width: 1280px){
+    .our-rooms {
+        column-gap: 30px;
+    }
+}

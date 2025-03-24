@@ -1,0 +1,56 @@
+:root {
+    --h1-font-size: 36px;
+    --h2-font-size: 32px;
+    --h3-font-size: 20px;
+    --h4-font-size: 16px;
+    --p-font-size: 12px;
+
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --h1-font-size: 46px;
+        --h2-font-size: 36px;
+        --h3-font-size: 24px;
+        --h4-font-size: 20px;
+        --p-font-size: 14px;
+
+    }
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    margin: 0;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+    margin: 0px;
+}
+
+p {
+    font-size: var(--p-font-size);
+    margin: 0;
+}
+
+
+.body-subtitle {
+    color: #696969;
+    justify-self: start;
+    Letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.body-text {
+    color: var(--white-color);
+    max-width: 530px;
+}
